@@ -1,0 +1,10 @@
+^C:\USERS\JOSEL\INTROFLUTTER\BUILD\WINDOWS\CMAKEFILES\F2A28F58974BB57876549731695D2146\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

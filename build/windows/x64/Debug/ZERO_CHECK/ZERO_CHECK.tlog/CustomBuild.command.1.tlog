@@ -1,0 +1,10 @@
+^C:\USERS\JOSEL\INTROFLUTTER\BUILD\WINDOWS\CMAKEFILES\F2A28F58974BB57876549731695D2146\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/josel/introflutter/windows -BC:/Users/josel/introflutter/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/josel/introflutter/build/windows/introflutter.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
